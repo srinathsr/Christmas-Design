@@ -1,0 +1,610 @@
+.container {
+  position: fixed;
+  top: 10%;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin-left: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.chirstmasTree {
+  height: 31.25rem;
+  width: 21.875rem;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 3.125rem;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+}
+
+.chirstmasTree .bigStar {
+  font-size: 3.125rem;
+  position: absolute;
+  color: #ac8900;
+  top: -3.125%/pxrem;
+  left: 0;
+  right: 0;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  text-shadow: 0px 0px 2px #fef1d9, 0px 0px 4px #fef1d9, 0px 0px 6px #fef1d9;
+  -webkit-animation: starAnimate 1.5s ease-in-out infinite;
+          animation: starAnimate 1.5s ease-in-out infinite;
+}
+
+.chirstmasTree .pole {
+  position: relative;
+  height: 100%;
+  width: 0;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+}
+
+.chirstmasTree .pole:nth-of-type(1) {
+  -webkit-transform: rotateY(72deg);
+          transform: rotateY(72deg);
+  -webkit-animation: poleRotate-1 6s ease-in-out infinite;
+          animation: poleRotate-1 6s ease-in-out infinite;
+}
+
+.chirstmasTree .pole:nth-of-type(2) {
+  -webkit-transform: rotateY(144deg);
+          transform: rotateY(144deg);
+  -webkit-animation: poleRotate-2 6s ease-in-out infinite;
+          animation: poleRotate-2 6s ease-in-out infinite;
+}
+
+.chirstmasTree .pole:nth-of-type(3) {
+  -webkit-transform: rotateY(216deg);
+          transform: rotateY(216deg);
+  -webkit-animation: poleRotate-3 6s ease-in-out infinite;
+          animation: poleRotate-3 6s ease-in-out infinite;
+}
+
+.chirstmasTree .pole:nth-of-type(4) {
+  -webkit-transform: rotateY(288deg);
+          transform: rotateY(288deg);
+  -webkit-animation: poleRotate-4 6s ease-in-out infinite;
+          animation: poleRotate-4 6s ease-in-out infinite;
+}
+
+.chirstmasTree .pole:nth-of-type(5) {
+  -webkit-transform: rotateY(360deg);
+          transform: rotateY(360deg);
+  -webkit-animation: poleRotate-5 6s ease-in-out infinite;
+          animation: poleRotate-5 6s ease-in-out infinite;
+}
+
+.chirstmasTree .pole li {
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  border-top-right-radius: 0.625rem;
+  border-bottom-right-radius: 0.625rem;
+}
+
+.chirstmasTree .pole li:nth-child(1) {
+  background-color: #5ec26d;
+  width: 5px;
+  -webkit-transform-origin: left;
+          transform-origin: left;
+  -webkit-transform: rotateY(14.4deg);
+          transform: rotateY(14.4deg);
+}
+
+.chirstmasTree .pole li:nth-child(1) i.fa {
+  -webkit-animation-delay: 0.24s;
+          animation-delay: 0.24s;
+}
+
+.chirstmasTree .pole li:nth-child(2) {
+  background-color: #5bc069;
+  width: 10px;
+  -webkit-transform-origin: left;
+          transform-origin: left;
+  -webkit-transform: rotateY(28.8deg);
+          transform: rotateY(28.8deg);
+}
+
+.chirstmasTree .pole li:nth-child(2) i.fa {
+  -webkit-animation-delay: 0.48s;
+          animation-delay: 0.48s;
+}
+
+.chirstmasTree .pole li:nth-child(3) {
+  background-color: #57bf66;
+  width: 15px;
+  -webkit-transform-origin: left;
+          transform-origin: left;
+  -webkit-transform: rotateY(43.2deg);
+          transform: rotateY(43.2deg);
+}
+
+.chirstmasTree .pole li:nth-child(3) i.fa {
+  -webkit-animation-delay: 0.72s;
+          animation-delay: 0.72s;
+}
+
+.chirstmasTree .pole li:nth-child(4) {
+  background-color: #53bd63;
+  width: 20px;
+  -webkit-transform-origin: left;
+          transform-origin: left;
+  -webkit-transform: rotateY(57.6deg);
+          transform: rotateY(57.6deg);
+}
+
+.chirstmasTree .pole li:nth-child(4) i.fa {
+  -webkit-animation-delay: 0.96s;
+          animation-delay: 0.96s;
+}
+
+.chirstmasTree .pole li:nth-child(5) {
+  background-color: #50bc5f;
+  width: 25px;
+  -webkit-transform-origin: left;
+          transform-origin: left;
+  -webkit-transform: rotateY(72deg);
+          transform: rotateY(72deg);
+}
+
+.chirstmasTree .pole li:nth-child(5) i.fa {
+  -webkit-animation-delay: 1.2s;
+          animation-delay: 1.2s;
+}
+
+.chirstmasTree .pole li:nth-child(6) {
+  background-color: #4cbb5c;
+  width: 30px;
+  -webkit-transform-origin: left;
+          transform-origin: left;
+  -webkit-transform: rotateY(86.4deg);
+          transform: rotateY(86.4deg);
+}
+
+.chirstmasTree .pole li:nth-child(6) i.fa {
+  -webkit-animation-delay: 1.44s;
+          animation-delay: 1.44s;
+}
+
+.chirstmasTree .pole li:nth-child(7) {
+  background-color: #48b958;
+  width: 35px;
+  -webkit-transform-origin: left;
+          transform-origin: left;
+  -webkit-transform: rotateY(100.8deg);
+          transform: rotateY(100.8deg);
+}
+
+.chirstmasTree .pole li:nth-child(7) i.fa {
+  -webkit-animation-delay: 1.68s;
+          animation-delay: 1.68s;
+}
+
+.chirstmasTree .pole li:nth-child(8) {
+  background-color: #46b656;
+  width: 40px;
+  -webkit-transform-origin: left;
+          transform-origin: left;
+  -webkit-transform: rotateY(115.2deg);
+          transform: rotateY(115.2deg);
+}
+
+.chirstmasTree .pole li:nth-child(8) i.fa {
+  -webkit-animation-delay: 1.92s;
+          animation-delay: 1.92s;
+}
+
+.chirstmasTree .pole li:nth-child(9) {
+  background-color: #44b354;
+  width: 45px;
+  -webkit-transform-origin: left;
+          transform-origin: left;
+  -webkit-transform: rotateY(129.6deg);
+          transform: rotateY(129.6deg);
+}
+
+.chirstmasTree .pole li:nth-child(9) i.fa {
+  -webkit-animation-delay: 2.16s;
+          animation-delay: 2.16s;
+}
+
+.chirstmasTree .pole li:nth-child(10) {
+  background-color: #43af53;
+  width: 50px;
+  -webkit-transform-origin: left;
+          transform-origin: left;
+  -webkit-transform: rotateY(144deg);
+          transform: rotateY(144deg);
+}
+
+.chirstmasTree .pole li:nth-child(10) i.fa {
+  -webkit-animation-delay: 2.4s;
+          animation-delay: 2.4s;
+}
+
+.chirstmasTree .pole li:nth-child(11) {
+  background-color: #42ab51;
+  width: 55px;
+  -webkit-transform-origin: left;
+          transform-origin: left;
+  -webkit-transform: rotateY(158.4deg);
+          transform: rotateY(158.4deg);
+}
+
+.chirstmasTree .pole li:nth-child(11) i.fa {
+  -webkit-animation-delay: 2.64s;
+          animation-delay: 2.64s;
+}
+
+.chirstmasTree .pole li:nth-child(12) {
+  background-color: #40a84f;
+  width: 60px;
+  -webkit-transform-origin: left;
+          transform-origin: left;
+  -webkit-transform: rotateY(172.8deg);
+          transform: rotateY(172.8deg);
+}
+
+.chirstmasTree .pole li:nth-child(12) i.fa {
+  -webkit-animation-delay: 2.88s;
+          animation-delay: 2.88s;
+}
+
+.chirstmasTree .pole li:nth-child(13) {
+  background-color: #3fa44d;
+  width: 65px;
+  -webkit-transform-origin: left;
+          transform-origin: left;
+  -webkit-transform: rotateY(187.2deg);
+          transform: rotateY(187.2deg);
+}
+
+.chirstmasTree .pole li:nth-child(13) i.fa {
+  -webkit-animation-delay: 3.12s;
+          animation-delay: 3.12s;
+}
+
+.chirstmasTree .pole li:nth-child(14) {
+  background-color: #3da04c;
+  width: 70px;
+  -webkit-transform-origin: left;
+          transform-origin: left;
+  -webkit-transform: rotateY(201.6deg);
+          transform: rotateY(201.6deg);
+}
+
+.chirstmasTree .pole li:nth-child(14) i.fa {
+  -webkit-animation-delay: 3.36s;
+          animation-delay: 3.36s;
+}
+
+.chirstmasTree .pole li:nth-child(15) {
+  background-color: #3c9d4a;
+  width: 75px;
+  -webkit-transform-origin: left;
+          transform-origin: left;
+  -webkit-transform: rotateY(216deg);
+          transform: rotateY(216deg);
+}
+
+.chirstmasTree .pole li:nth-child(15) i.fa {
+  -webkit-animation-delay: 3.6s;
+          animation-delay: 3.6s;
+}
+
+.chirstmasTree .pole li:nth-child(16) {
+  background-color: #3a9948;
+  width: 80px;
+  -webkit-transform-origin: left;
+          transform-origin: left;
+  -webkit-transform: rotateY(230.4deg);
+          transform: rotateY(230.4deg);
+}
+
+.chirstmasTree .pole li:nth-child(16) i.fa {
+  -webkit-animation-delay: 3.84s;
+          animation-delay: 3.84s;
+}
+
+.chirstmasTree .pole li:nth-child(17) {
+  background-color: #399546;
+  width: 85px;
+  -webkit-transform-origin: left;
+          transform-origin: left;
+  -webkit-transform: rotateY(244.8deg);
+          transform: rotateY(244.8deg);
+}
+
+.chirstmasTree .pole li:nth-child(17) i.fa {
+  -webkit-animation-delay: 4.08s;
+          animation-delay: 4.08s;
+}
+
+.chirstmasTree .pole li:nth-child(18) {
+  background-color: #389245;
+  width: 90px;
+  -webkit-transform-origin: left;
+          transform-origin: left;
+  -webkit-transform: rotateY(259.2deg);
+          transform: rotateY(259.2deg);
+}
+
+.chirstmasTree .pole li:nth-child(18) i.fa {
+  -webkit-animation-delay: 4.32s;
+          animation-delay: 4.32s;
+}
+
+.chirstmasTree .pole li:nth-child(19) {
+  background-color: #368e43;
+  width: 95px;
+  -webkit-transform-origin: left;
+          transform-origin: left;
+  -webkit-transform: rotateY(273.6deg);
+          transform: rotateY(273.6deg);
+}
+
+.chirstmasTree .pole li:nth-child(19) i.fa {
+  -webkit-animation-delay: 4.56s;
+          animation-delay: 4.56s;
+}
+
+.chirstmasTree .pole li:nth-child(20) {
+  background-color: #358a41;
+  width: 100px;
+  -webkit-transform-origin: left;
+          transform-origin: left;
+  -webkit-transform: rotateY(288deg);
+          transform: rotateY(288deg);
+}
+
+.chirstmasTree .pole li:nth-child(20) i.fa {
+  -webkit-animation-delay: 4.8s;
+          animation-delay: 4.8s;
+}
+
+.chirstmasTree .pole li:nth-child(21) {
+  background-color: #33863f;
+  width: 105px;
+  -webkit-transform-origin: left;
+          transform-origin: left;
+  -webkit-transform: rotateY(302.4deg);
+          transform: rotateY(302.4deg);
+}
+
+.chirstmasTree .pole li:nth-child(21) i.fa {
+  -webkit-animation-delay: 5.04s;
+          animation-delay: 5.04s;
+}
+
+.chirstmasTree .pole li:nth-child(22) {
+  background-color: #32833e;
+  width: 110px;
+  -webkit-transform-origin: left;
+          transform-origin: left;
+  -webkit-transform: rotateY(316.8deg);
+          transform: rotateY(316.8deg);
+}
+
+.chirstmasTree .pole li:nth-child(22) i.fa {
+  -webkit-animation-delay: 5.28s;
+          animation-delay: 5.28s;
+}
+
+.chirstmasTree .pole li:nth-child(23) {
+  background-color: #317f3c;
+  width: 115px;
+  -webkit-transform-origin: left;
+          transform-origin: left;
+  -webkit-transform: rotateY(331.2deg);
+          transform: rotateY(331.2deg);
+}
+
+.chirstmasTree .pole li:nth-child(23) i.fa {
+  -webkit-animation-delay: 5.52s;
+          animation-delay: 5.52s;
+}
+
+.chirstmasTree .pole li:nth-child(24) {
+  background-color: #2f7b3a;
+  width: 120px;
+  -webkit-transform-origin: left;
+          transform-origin: left;
+  -webkit-transform: rotateY(345.6deg);
+          transform: rotateY(345.6deg);
+}
+
+.chirstmasTree .pole li:nth-child(24) i.fa {
+  -webkit-animation-delay: 5.76s;
+          animation-delay: 5.76s;
+}
+
+.chirstmasTree .pole li:nth-child(25) {
+  background-color: #2e7838;
+  width: 125px;
+  -webkit-transform-origin: left;
+          transform-origin: left;
+  -webkit-transform: rotateY(360deg);
+          transform: rotateY(360deg);
+}
+
+.chirstmasTree .pole li:nth-child(25) i.fa {
+  -webkit-animation-delay: 6s;
+          animation-delay: 6s;
+}
+
+.chirstmasTree .pole li i.fa {
+  position: relative;
+  -webkit-transform: rotateY(90deg);
+          transform: rotateY(90deg);
+  left: 100%;
+  font-size: 1rem;
+  color: #ac8900;
+  text-shadow: 0px 0px 2px #fef1d9, 0px 0px 4px #fef1d9, 0px 0px 6px #fef1d9;
+  -webkit-animation: starAnimate 0.3s ease-in-out infinite;
+          animation: starAnimate 0.3s ease-in-out infinite;
+}
+
+.chirstmasTree .treeBottom {
+  height: 3.75rem;
+  width: 2.5rem;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  background-image: linear-gradient(95deg, #902c06, #2e0e02);
+}
+
+.chirstmasTree .text {
+  position: absolute;
+  color: yellow;
+  top: 92%;
+  font-size: 26px;
+  font-weight: bold;
+}
+
+@-webkit-keyframes poleRotate-1 {
+  from {
+    -webkit-transform: rotateY(72deg);
+            transform: rotateY(72deg);
+  }
+  to {
+    -webkit-transform: rotateY(432deg);
+            transform: rotateY(432deg);
+  }
+}
+
+@keyframes poleRotate-1 {
+  from {
+    -webkit-transform: rotateY(72deg);
+            transform: rotateY(72deg);
+  }
+  to {
+    -webkit-transform: rotateY(432deg);
+            transform: rotateY(432deg);
+  }
+}
+
+@-webkit-keyframes poleRotate-2 {
+  from {
+    -webkit-transform: rotateY(144deg);
+            transform: rotateY(144deg);
+  }
+  to {
+    -webkit-transform: rotateY(504deg);
+            transform: rotateY(504deg);
+  }
+}
+
+@keyframes poleRotate-2 {
+  from {
+    -webkit-transform: rotateY(144deg);
+            transform: rotateY(144deg);
+  }
+  to {
+    -webkit-transform: rotateY(504deg);
+            transform: rotateY(504deg);
+  }
+}
+
+@-webkit-keyframes poleRotate-3 {
+  from {
+    -webkit-transform: rotateY(216deg);
+            transform: rotateY(216deg);
+  }
+  to {
+    -webkit-transform: rotateY(576deg);
+            transform: rotateY(576deg);
+  }
+}
+
+@keyframes poleRotate-3 {
+  from {
+    -webkit-transform: rotateY(216deg);
+            transform: rotateY(216deg);
+  }
+  to {
+    -webkit-transform: rotateY(576deg);
+            transform: rotateY(576deg);
+  }
+}
+
+@-webkit-keyframes poleRotate-4 {
+  from {
+    -webkit-transform: rotateY(288deg);
+            transform: rotateY(288deg);
+  }
+  to {
+    -webkit-transform: rotateY(648deg);
+            transform: rotateY(648deg);
+  }
+}
+
+@keyframes poleRotate-4 {
+  from {
+    -webkit-transform: rotateY(288deg);
+            transform: rotateY(288deg);
+  }
+  to {
+    -webkit-transform: rotateY(648deg);
+            transform: rotateY(648deg);
+  }
+}
+
+@-webkit-keyframes poleRotate-5 {
+  from {
+    -webkit-transform: rotateY(360deg);
+            transform: rotateY(360deg);
+  }
+  to {
+    -webkit-transform: rotateY(720deg);
+            transform: rotateY(720deg);
+  }
+}
+
+@keyframes poleRotate-5 {
+  from {
+    -webkit-transform: rotateY(360deg);
+            transform: rotateY(360deg);
+  }
+  to {
+    -webkit-transform: rotateY(720deg);
+            transform: rotateY(720deg);
+  }
+}
+
+@-webkit-keyframes starAnimate {
+  0%, 100% {
+    color: #ac8900;
+  }
+  50% {
+    color: #fef1d9;
+  }
+}
+
+@keyframes starAnimate {
+  0%, 100% {
+    color: #ac8900;
+  }
+  50% {
+    color: #fef1d9;
+  }
+}
+/*# sourceMappingURL=style.css.map */

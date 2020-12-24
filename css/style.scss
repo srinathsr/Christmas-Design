@@ -1,0 +1,144 @@
+@function rem($value){
+    @return unquote(($value/1px)/16+"rem");
+}
+.container{
+    position: fixed;
+    top:10%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin-left:50%;
+    display: flex;
+
+}
+$starCount:25;
+$poleCount:5;
+$speed:6s;
+$greenColor:#62c370;
+$treeBottom:#2e0e02;
+$white:#ffffff;
+$bigStarColor:#efea5a;
+$starColor1:#ffe479;
+$starColor2:#fef1d9;
+
+
+
+.chirstmasTree{
+    height: rem(500px);
+    width: rem(350px);
+    position:relative;
+    display:flex;
+    justify-content: center;
+    margin-top:rem(50px);
+    transform-style:preserve-3d;
+    .bigStar{
+        font-size: rem(50px);
+        position: absolute;
+        color: darken($starColor1,40%);
+        top:rem(-50%);
+        left:0;
+        right:0;
+        margin:auto;
+        display:flex;
+        justify-content: center;
+        transform-style:preserve-3d;
+        text-shadow: 0px 0px 2px $starColor2,0px 0px 4px $starColor2,
+        0px 0px 6px $starColor2;
+        animation:starAnimate $speed * 0.25 ease-in-out infinite;
+    }
+    .pole{
+
+        position: relative;
+        height: 100%;
+        width:0;
+        list-style-type: none;
+        padding:0;
+        margin:0;
+        transform-style:preserve-3d;
+        @for $j from 1 through $poleCount{
+            &:nth-of-type(#{$j}){
+                transform:rotateY(#{$j * (360 / $poleCount)}deg);
+                animation: poleRotate-#{$j} $speed ease-in-out infinite;
+            }
+        }
+        li{
+            
+            transform-style: preserve-3d;
+            border-top-right-radius: rem(10px);
+            border-bottom-right-radius: rem(10px);
+            @for $i from 1 through $starCount{
+                &:nth-child(#{$i}){
+                    background-color:darken($greenColor, $i);
+                    width:#{$i * 5px};
+                    transform-origin:left;
+                    transform:rotateY(#{$i * (360 / $starCount)}deg);
+                    i.fa{
+                        animation-delay: #{$i * $speed / $starCount};
+                    }
+                }
+            }
+            i.fa{
+                position: relative;
+                transform: rotateY(90deg);
+                left: 100%;
+                font-size: rem(16px);
+                color:darken($starColor1,40%);
+                text-shadow: 0px 0px 2px $starColor2,
+                0px 0px 4px $starColor2,
+                0px 0px 6px $starColor2;
+                animation:starAnimate $speed * 0.05 ease-in-out infinite;
+            }
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+    }
+    .treeBottom{
+        height: rem(60px);
+        width:rem(40px);
+        position: absolute;
+        left:0;
+        right:0;
+        bottom:0;
+        margin: auto;
+        background-image:linear-gradient(95deg,
+        lighten($treeBottom, 20%),$treeBottom);
+    }
+    .text{
+        position: absolute;
+        color:yellow;
+        top: 92%;
+        font-size: 26px;
+        font-weight: bold;
+    }
+}
+
+@for $k from  1 through $poleCount{
+    @keyframes poleRotate-#{$k} {
+        from{
+            transform:rotateY(#{$k * (360 / $poleCount)}deg);
+        }
+        to{
+            transform:rotateY(#{$k * (360 / $poleCount) + 360}deg);
+        }
+    }
+}
+
+@keyframes starAnimate{
+    0%,100%{
+        color:darken($starColor1,40%);
+    }
+    50%{
+        color:$starColor2;
+    }
+}
